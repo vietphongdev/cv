@@ -18,41 +18,46 @@
   font-family: Roboto;
   font-style: italic;
   font-weight: 300;
-  src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
-    url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf)
-      format("truetype");
+  src:
+    local("Roboto Light Italic"),
+    local("Roboto-LightItalic"),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format("truetype");
 }
 @font-face {
   font-family: Roboto;
   font-style: italic;
   font-weight: 500;
-  src: local("Roboto Medium Italic"), local("Roboto-MediumItalic"),
-    url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf)
-      format("truetype");
+  src:
+    local("Roboto Medium Italic"),
+    local("Roboto-MediumItalic"),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf) format("truetype");
 }
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  src: local("Roboto Light"), local("Roboto-Light"),
-    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf)
-      format("truetype");
+  src:
+    local("Roboto Light"),
+    local("Roboto-Light"),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format("truetype");
 }
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"),
-    url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf)
-      format("truetype");
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format("truetype");
 }
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  src: local("Roboto Medium"), local("Roboto-Medium"),
-    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf)
-      format("truetype");
+  src:
+    local("Roboto Medium"),
+    local("Roboto-Medium"),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format("truetype");
 } /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -60,12 +65,11 @@
 @font-face {
   font-family: FontAwesome;
   src: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0);
-  src: url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0)
+  src:
+    url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0)
       format("embedded-opentype"),
-    url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0)
-      format("woff"),
-    url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0)
-      format("truetype"),
+    url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0) format("woff"),
+    url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0) format("truetype"),
     url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular)
       format("svg");
   font-weight: 400;
@@ -2121,7 +2125,10 @@ table {
   box-sizing: inherit;
 }
 body {
-  font: 16px/1.6 Roboto, Helvetica, sans-serif;
+  font:
+    16px/1.6 Roboto,
+    Helvetica,
+    sans-serif;
   font-weight: 300;
 }
 .button.button-red,
@@ -2175,7 +2182,7 @@ strong {
 }
 hr {
   box-sizing: content-box;
-  margin: 30px 0;
+  margin: 15px 0 20px;
   height: 1px;
   width: 100%;
   background: #ddd;
@@ -2185,6 +2192,7 @@ hr.sep-3 {
   border: none;
   height: 1px;
   background-image: linear-gradient(to right, #f3efef, #c17878, #f0f0f0);
+  margin-top: 25px;
 }
 hr.sep-3::after {
   content: "§";
@@ -2714,9 +2722,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
     line-height: 1.5;
     margin-top: 10px;
   }
-  .timeline_element:first-child
-    .timeline_element-date
-    .timeline_element-date-text {
+  .timeline_element:first-child .timeline_element-date .timeline_element-date-text {
     margin-top: -10px;
     display: block;
   }
@@ -2741,29 +2747,20 @@ html:not(.platform-mac) .site-sidebar .block-blog {
   .timeline_element + .timeline_element .timeline_element-contents {
     border-top: 1px solid #ddd;
   }
-  .timeline.portfolio-timeline
-    .timeline_element:first-child
-    .timeline_element-contents,
+  .timeline.portfolio-timeline .timeline_element:first-child .timeline_element-contents,
   .timeline_element:first-child .timeline_element-contents {
     padding-top: 0;
   }
-  .timeline.portfolio-timeline
-    .timeline_element:first-child
-    .timeline_element-date {
+  .timeline.portfolio-timeline .timeline_element:first-child .timeline_element-date {
     padding-top: 0;
     line-height: 1.5;
     margin-top: 10px;
   }
-  .timeline.portfolio-timeline
-    .timeline_element:first-child
-    .timeline_element-date
-    .timeline_element-date-text {
+  .timeline.portfolio-timeline .timeline_element:first-child .timeline_element-date .timeline_element-date-text {
     margin-top: -10px;
     display: block;
   }
-  .timeline.portfolio-timeline
-    .timeline_element:first-child
-    .timeline_element-date:after {
+  .timeline.portfolio-timeline .timeline_element:first-child .timeline_element-date:after {
     top: 0;
   }
 }
@@ -3064,18 +3061,12 @@ html:not(.platform-mac) .site-sidebar .block-blog {
   .project-section .project-descriptions .project-description:first-child {
     padding-right: 20px;
   }
-  .project-section
-    .project-descriptions
-    .project-description
-    + .project-description {
+  .project-section .project-descriptions .project-description + .project-description {
     padding-left: 20px;
     border-left: 1px solid #ddd;
   }
 }
-.project-section
-  .project-descriptions
-  .project-description
-  ul:not(.tech-icons):not(.tech-tags) {
+.project-section .project-descriptions .project-description ul:not(.tech-icons):not(.tech-tags) {
   padding-left: 20px;
 }
 .project-section .technologies-title {
@@ -3216,7 +3207,7 @@ body.cv {
 }
 .cv-header-avatar img {
   border-radius: 2px;
-  height: 150px;
+  height: 120px;
 }
 @media screen and (max-width: 1000px) {
   .cv-page {
@@ -3285,10 +3276,15 @@ body.cv {
 }
 .cv-header-meta-right {
   float: right;
-  border-left: 1px solid #e0e0e0;
+  border-left: 1px solid #d2abab;
   padding-left: 15px;
   text-align: left;
 }
+
+.cv-header-meta-row {
+  margin: 5px 0;
+}
+
 @media screen and (max-width: 1000px) {
   .cv-header-meta-right {
     float: none;
@@ -3310,7 +3306,7 @@ body.cv {
   color: #bb1e1e;
   font-size: 25px;
   font-weight: 400;
-  padding-left: 17.5%;
+  padding-left: 0.5em;
   margin-bottom: 15px;
   page-break-after: avoid;
   text-transform: uppercase;
@@ -3329,7 +3325,7 @@ body.cv {
   }
 }
 .cv-section-content.cv-section-content--indented {
-  padding-left: 17.5%;
+  padding-left: 0.5em;
 }
 @media screen and (max-width: 767px) {
   .cv-section-content.cv-section-content--indented {
@@ -3357,7 +3353,7 @@ body.cv {
 }
 .cv-timeline-side {
   float: left;
-  width: 23%;
+  width: 20%;
   text-align: right;
   padding-right: 15px;
   color: #777;
@@ -3374,7 +3370,7 @@ body.cv {
 }
 .cv-timeline-body {
   float: left;
-  width: 77%;
+  width: 80%;
 }
 .cv-timeline-body p,
 .cv-timeline-body ul {
@@ -3383,6 +3379,7 @@ body.cv {
 }
 .cv-timeline-company {
   text-transform: uppercase;
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .cv-timeline-company {
